@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const CalendarIcon = () => (
@@ -13,8 +12,43 @@ const ClockIcon = () => (
     </svg>
 );
 
+const GoogleCalendarIcon = () => (
+    <svg className="w-6 h-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 3H19V1H17V3H7V1H5V3H4C2.9 3 2 3.9 2 5V21C2 22.1 2.9 23 4 23H20C22.1 23 23 22.1 23 21V5C23 3.9 22.1 3 20 3ZM20 21H4V8H20V21Z" fill="#4285F4"/>
+        <path d="M4 8H20V5H4V8Z" fill="#34A853"/>
+        <path d="M17 1H19V3H17V1Z" fill="#FBBC05"/>
+        <path d="M7 1H5V3H7V1Z" fill="#FBBC05"/>
+        <path d="M10 13H14V17H10V13Z" fill="#EA4335"/>
+    </svg>
+);
+
 
 export const Schedule: React.FC = () => {
+
+    const buildGoogleCalendarLink = () => {
+        const title = "Protocolo de 21 Días de Relajación Espiritual";
+        // NOTE: Hardcoded to the next occurrence of "Lunes, 1 de Diciembre", which is Dec 2, 2024.
+        // Start time is 6 AM Lima time (UTC-5), which is 11:00 UTC.
+        const startDate = "20241202T110000Z";
+        const endDate = "20241202T111500Z";
+        const description = `¡Prepárate para tu viaje de transformación! Dedica 15 minutos diarios para encontrar paz, claridad y energía.\n\nÚnete a la comunidad en WhatsApp: https://chat.whatsapp.com/EjHfSRo1FOQCQSoJxsOBRl`;
+        // Repeats daily for 21 days.
+        const recurrence = "RRULE:FREQ=DAILY;COUNT=21";
+
+        const params = new URLSearchParams({
+            action: 'TEMPLATE',
+            text: title,
+            dates: `${startDate}/${endDate}`,
+            details: description,
+            recur: recurrence,
+            crm: 'AVAILABLE',
+        });
+
+        return `https://www.google.com/calendar/render?${params.toString()}`;
+    };
+
+    const googleCalendarLink = buildGoogleCalendarLink();
+
     return (
         <section className="py-16 bg-white">
             <div className="container mx-auto px-6">
@@ -58,6 +92,18 @@ export const Schedule: React.FC = () => {
                         <p className="text-lg italic text-slate-600">
                             Si estás listo para relajarte, sanar y crecer…<br/>entonces este protocolo es para ti.
                         </p>
+                    </div>
+
+                    <div className="mt-10">
+                        <a
+                            href={googleCalendarLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center justify-center bg-white hover:bg-slate-100 text-slate-700 font-semibold py-3 px-6 rounded-lg transition duration-300 ease-in-out shadow-md hover:shadow-lg border border-slate-300"
+                        >
+                            <GoogleCalendarIcon />
+                            <span className="ml-3">Añadir a Google Calendar</span>
+                        </a>
                     </div>
                 </div>
             </div>

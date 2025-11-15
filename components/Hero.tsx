@@ -1,13 +1,13 @@
-
 import React from 'react';
 
 export const Hero: React.FC = () => {
     const WHATSAPP_LINK = "https://chat.whatsapp.com/EjHfSRo1FOQCQSoJxsOBRl";
 
     return (
-        <section className="relative text-white py-20 md:py-32">
-            <div className="absolute inset-0 bg-black opacity-40"></div>
-            <img src="https://picsum.photos/id/1015/1920/1080" alt="Paisaje sereno" className="absolute inset-0 w-full h-full object-cover"/>
+        <section className="relative text-white py-20 md:py-32 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1540206395-68808572332f?q=80&w=1974&auto=format&fit=crop" alt="Piedras zen apiladas en una playa al atardecer" className="absolute inset-0 w-full h-full object-cover"/>
+            <div className="absolute inset-0 bg-gradient-to-br from-teal-800/70 via-indigo-900/70 to-purple-800/70 animated-gradient"></div>
+            <div className="absolute inset-0 bg-black opacity-30"></div>
             
             <div className="relative container mx-auto px-6 text-center z-10">
                 <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4 tracking-tight" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.6)'}}>

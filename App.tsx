@@ -7,6 +7,7 @@ import { ProtocolPhases } from './components/ProtocolPhases';
 import { Facilitator } from './components/Facilitator';
 import { Testimonials } from './components/Testimonials';
 import { Schedule } from './components/Schedule';
+import { FAQ } from './components/FAQ';
 import { CallToAction } from './components/CallToAction';
 import { Footer } from './components/Footer';
 
@@ -21,6 +22,7 @@ function App() {
         <Facilitator />
         <Testimonials />
         <Schedule />
+        <FAQ />
         <CallToAction />
       </main>
       <Footer />
