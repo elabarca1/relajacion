@@ -99,7 +99,7 @@ export const Schedule: React.FC = () => {
                             href={googleCalendarLink}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center justify-center bg-white hover:bg-slate-100 text-slate-700 font-semibold py-3 px-6 rounded-lg transition duration-300 ease-in-out shadow-md hover:shadow-lg border border-slate-300"
+                            className="inline-flex items-center justify-center bg-gradient-to-r from-sky-500 to-emerald-500 hover:from-sky-600 hover:to-emerald-600 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 ease-in-out shadow-lg hover:shadow-xl transform hover:scale-105 shadow-emerald-500/40 hover:shadow-emerald-500/50"
                         >
                             <GoogleCalendarIcon />
                             <span className="ml-3">Añadir a Google Calendar</span>
