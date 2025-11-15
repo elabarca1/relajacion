@@ -4,6 +4,9 @@ import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { Objectives } from './components/Objectives';
 import { ProtocolPhases } from './components/ProtocolPhases';
+import { Facilitator } from './components/Facilitator';
+import { Testimonials } from './components/Testimonials';
+import { Schedule } from './components/Schedule';
 import { CallToAction } from './components/CallToAction';
 import { Footer } from './components/Footer';
 
@@ -15,6 +18,9 @@ function App() {
         <Hero />
         <Objectives />
         <ProtocolPhases />
+        <Facilitator />
+        <Testimonials />
+        <Schedule />
         <CallToAction />
       </main>
       <Footer />
