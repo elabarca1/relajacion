@@ -29,7 +29,11 @@ export const Facilitator: React.FC = () => {
                     </div>
                     <div className="text-center md:text-left">
                         <h2 className="text-3xl md:text-4xl font-bold text-slate-800">Conoce a tu Guía Espiritual</h2>
-                        <p className="text-lg text-slate-600 mt-4 mb-8">
+                        <div className="mt-4 mb-6">
+                            <p className="text-2xl font-semibold text-emerald-700">Endys Alberto Labarca</p>
+                            <p className="text-lg italic text-slate-600">Master Coach en PNL</p>
+                        </div>
+                        <p className="text-lg text-slate-600 mb-8">
                             Un experto apasionado por el bienestar integral, dedicado a acompañarte en cada paso de tu transformación.
                         </p>
                         <ul className="space-y-4">
