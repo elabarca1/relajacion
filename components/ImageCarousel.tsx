@@ -7,8 +7,8 @@ const images = [
         alt: "Meditación frente al mar"
     },
     {
-        url: "https://images.unsplash.com/photo-1475598322381-f1b408c374da?q=80&w=1920&auto=format&fit=crop",
-        alt: "Piedras zen y agua"
+        url: "https://images.unsplash.com/photo-1499209974431-2761e25230d0?q=80&w=1920&auto=format&fit=crop",
+        alt: "Relajación y luz natural en la naturaleza"
     },
     {
         url: "https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?q=80&w=1920&auto=format&fit=crop",
@@ -48,7 +48,7 @@ export const ImageCarousel: React.FC = () => {
 
     return (
         <section className="relative w-full h-[400px] md:h-[600px] bg-slate-900 overflow-hidden group">
-            {/* Imágenes con transición de opacidad */}
+            {/* Imágenes con transición de opacidad y efecto Ken Burns (Zoom) */}
             {images.map((img, index) => (
                 <div
                     key={index}
@@ -57,7 +57,7 @@ export const ImageCarousel: React.FC = () => {
                     <img 
                         src={img.url} 
                         alt={img.alt} 
-                        className="w-full h-full object-cover" 
+                        className={`w-full h-full object-cover transition-transform duration-[10000ms] ease-out ${index === currentIndex ? 'scale-110' : 'scale-100'}`} 
                     />
                     {/* Capa oscura sutil para unificar tonos */}
                     <div className="absolute inset-0 bg-black/20"></div>
