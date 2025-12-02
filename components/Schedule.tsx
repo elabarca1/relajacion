@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const CalendarIcon = () => (
@@ -26,7 +27,7 @@ const GoogleCalendarIcon = () => (
 export const Schedule: React.FC = () => {
 
     const buildGoogleCalendarLink = () => {
-        const title = "Protocolo de 21 Días de Relajación Espiritual";
+        const title = "Protocolo de 21 Días de Relajación y Sanación Interior";
         // NOTE: Hardcoded to the next occurrence of "Lunes, 1 de Diciembre", which is Dec 2, 2024.
         // Start time is 6 AM Lima time (UTC-5), which is 11:00 UTC.
         const startDate = "20241202T110000Z";

@@ -29,7 +29,7 @@ export const Facilitator: React.FC = () => {
                         />
                     </div>
                     <div className="text-center md:text-left">
-                        <h2 className="text-3xl md:text-4xl font-bold text-slate-800">Conoce a tu Guía Espiritual</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold text-slate-800">Conoce a tu Trainer</h2>
                         <div className="mt-4 mb-6">
                             <p className="text-2xl font-semibold text-emerald-700">Endys Alberto Labarca</p>
                             <p className="text-lg italic text-slate-600">Trainer en PNL</p>

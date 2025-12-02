@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 export const Hero: React.FC = () => {
@@ -11,7 +12,7 @@ export const Hero: React.FC = () => {
             
             <div className="relative container mx-auto px-6 text-center z-10">
                 <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4 tracking-tight" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.6)'}}>
-                    Protocolo de 21 Días de Relajación Espiritual
+                    Protocolo de 21 Días de Relajación y Sanación Interior
                 </h1>
                 <p className="text-lg md:text-2xl mb-8 max-w-3xl mx-auto font-light" style={{textShadow: '1px 1px 2px rgba(0,0,0,0.7)'}}>
                     Armoniza cuerpo, mente y alma. Tu viaje hacia la serenidad comienza hoy.
