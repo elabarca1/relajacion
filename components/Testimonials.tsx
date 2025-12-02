@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const testimonialsData = [
@@ -37,11 +38,8 @@ export const Testimonials: React.FC = () => {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                     {testimonialsData.map((testimonial, index) => (
-                         <div key={index} className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg text-center flex flex-col">
-                            <svg className="w-10 h-10 mx-auto mb-3 text-emerald-300" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
-                                <path d="M9.333 8h-4.666v9.333h4.666v-9.333zM27.333 8h-4.666v9.333h4.666v-9.333zM4.667 4c-2.58 0-4.667 2.087-4.667 4.667v4.666c0 2.58 2.087 4.667 4.667 4.667h2.333v9.333c0 2.58 2.087 4.667 4.667 4.667h.001c2.58 0 4.666-2.087 4.666-4.667v-16.333c0-2.58-2.087-4.667-4.667-4.667h-7.001zM22.667 4c-2.58 0-4.667 2.087-4.667 4.667v4.666c0 2.58 2.087 4.667 4.667 4.667h2.333v9.333c0 2.58 2.087 4.667 4.667 4.667h.001c2.58 0 4.666-2.087 4.666-4.667v-16.333c0-2.58-2.087-4.667-4.667-4.667h-7.001z"></path>
-                            </svg>
-                            <blockquote className="text-base italic text-slate-700 mb-4 flex-grow">
+                         <div key={index} className="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-lg text-center flex flex-col">
+                            <blockquote className="text-base italic text-slate-700 mb-6 flex-grow">
                                 "{testimonial.quote}"
                             </blockquote>
                             <footer className="font-bold text-slate-800 text-base mt-auto">
