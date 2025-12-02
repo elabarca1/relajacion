@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const CheckIcon = () => (
@@ -8,7 +9,7 @@ const CheckIcon = () => (
 
 export const Facilitator: React.FC = () => {
     const credentials = [
-        "Máster en Programación Neuro Lingüística",
+        "Trainer Certificado en Programación Neuro Lingüística",
         "Coach Ontológico y Coach de Vida",
         "Terapeuta y especialización en (Acupuntura Oriental, Biomagnetismo Energético y cuántico)",
         "Destilador de aceites esenciales naturales",
