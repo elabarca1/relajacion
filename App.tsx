@@ -2,6 +2,7 @@
 import React from 'react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
+import { ImageCarousel } from './components/ImageCarousel';
 import { Objectives } from './components/Objectives';
 import { ProtocolPhases } from './components/ProtocolPhases';
 import { Facilitator } from './components/Facilitator';
@@ -17,6 +18,7 @@ function App() {
       <Header />
       <main>
         <Hero />
+        <ImageCarousel />
         <Objectives />
         <ProtocolPhases />
         <Facilitator />
