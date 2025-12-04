@@ -13,6 +13,7 @@ export const Facilitator: React.FC = () => {
         "Coach Ontológico y Coach de Vida",
         "Terapeuta y especialización en (Acupuntura Oriental, Biomagnetismo Energético y cuántico)",
         "Destilador de aceites esenciales naturales",
+        "Certificado de Hipnosis Clinica",
         "Gran Maestro Internacional (Cámara Internacional de Conferencistas)",
         "CEO de la comunidad Camino de Bienestar"
     ];
