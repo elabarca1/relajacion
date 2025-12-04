@@ -14,7 +14,7 @@ const protocolData: { phase: string; title: string; days: DayItem[] }[] = [
       { text: "Día 1 – Respiración Fundacional", videoLink: "https://youtu.be/uA6XOoWwOpg" },
       { text: "Día 2 – Escaneo Corporal Espiritual", videoLink: "https://youtu.be/McPUDKqUGhc" },
       { text: "Día 3 – Liberación del Peso Interno", videoLink: "https://youtu.be/NSurBC6mdsY" },
-      { text: "Día 4 – Anclaje de Paz" },
+      { text: "Día 4 – Anclaje de Paz", videoLink: "https://youtu.be/-8Yp1SQzYP8" },
       { text: "Día 5 – Expansión del Corazón" },
       { text: "Día 6 – Baño de Luz en Silencio" },
       { text: "Día 7 – Ritual de Descanso Profundo" },
