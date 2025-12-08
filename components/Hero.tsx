@@ -1,9 +1,15 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 
 export const Hero: React.FC = () => {
     const WHATSAPP_LINK = "https://chat.whatsapp.com/EjHfSRo1FOQCQSoJxsOBRl";
-    const VIDEO_ID = "k0wyZ9G7mXo";
+    
+    // Estado para almacenar el ID del video seleccionado aleatoriamente
+    const [videoId] = useState(() => {
+        const videos = ["k0wyZ9G7mXo", "BRC9P_NQsBI"];
+        const randomIndex = Math.floor(Math.random() * videos.length);
+        return videos[randomIndex];
+    });
 
     return (
         <section className="relative text-white py-20 md:py-32 overflow-hidden">
@@ -32,7 +38,7 @@ export const Hero: React.FC = () => {
                 <div className="max-w-4xl mx-auto rounded-xl overflow-hidden shadow-2xl border-4 border-white/20 bg-black">
                     <div className="relative pb-[56.25%] h-0">
                         <iframe 
-                            src={`https://www.youtube.com/embed/${VIDEO_ID}`} 
+                            src={`https://www.youtube.com/embed/${videoId}`} 
                             title="Video de Bienvenida"
                             className="absolute top-0 left-0 w-full h-full"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
