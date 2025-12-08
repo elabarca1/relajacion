@@ -17,7 +17,7 @@ const protocolData: { phase: string; title: string; days: DayItem[] }[] = [
       { text: "Día 4 – Anclaje de Paz", videoLink: "https://youtu.be/-8Yp1SQzYP8" },
       { text: "Día 5 – Expansión del Corazón", videoLink: "https://youtu.be/vgIVAsfeIcw" },
       { text: "Día 6 – Baño de Luz en Silencio", videoLink: "https://youtu.be/biHoUEu6vsc" },
-      { text: "Día 7 – Ritual de Descanso Profundo" },
+      { text: "Día 7 – Ritual de Descanso Profundo", videoLink: "https://youtu.be/_-NtKOAmYFI" },
     ]
   },
   {
